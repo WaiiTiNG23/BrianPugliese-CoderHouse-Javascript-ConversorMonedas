@@ -1,18 +1,18 @@
-# Simulador de Conversión de Monedas
+﻿# Simulador de ConversiÃ³n de Monedas
 
-Entrega N°2 - Coderhouse JavaScript
+Entrega NÂ°2 - Coderhouse JavaScript
 
-## Descripción
-Simulador interactivo que permite convertir montos entre monedas, administrar tipos de cambio y visualizar el historial de conversiones. La aplicación trabaja con DOM y eventos, y almacena los datos en LocalStorage para conservar cambios entre sesiones.
+## DescripciÃ³n
+Simulador interactivo que permite convertir montos entre monedas, administrar tipos de cambio y visualizar el historial de conversiones. La aplicaciÃ³n trabaja con DOM y eventos, y almacena los datos en LocalStorage para conservar cambios entre sesiones.
 
 ## Funcionalidades
-- Conversión entre monedas con selección de origen y destino
-- Intercambio rápido de monedas
-- Gestión de tipos de cambio (alta, actualización y eliminación)
+- ConversiÃ³n entre monedas con selecciÃ³n de origen y destino
+- Intercambio rÃ¡pido de monedas
+- GestiÃ³n de tipos de cambio (alta, actualizaciÃ³n y eliminaciÃ³n)
 - Historial de conversiones persistente
 - Persistencia de datos con LocalStorage
 
-## Tecnologías
+## TecnologÃ­as
 - HTML5
 - CSS3
 - JavaScript (DOM, eventos, arrays, objetos, almacenamiento)
@@ -20,17 +20,17 @@ Simulador interactivo que permite convertir montos entre monedas, administrar ti
 ## Estructura del proyecto
 ```
 clase_javascript/
-├─ index.html
-├─ css/
-│  └─ styles.css
-├─ js/
-│  └─ main.js
-└─ data/
-   └─ monedas.json
+â”œâ”€ index.html
+â”œâ”€ css/
+â”‚  â””â”€ styles.css
+â”œâ”€ js/
+â”‚  â””â”€ main.js
+â””â”€ data/
+   â””â”€ monedas.json
 ```
 
 ## GitHub Pages
-[Ver proyecto en GitHub Pages](PEGAR_LINK_AQUI)
+[Ver proyecto en GitHub Pages](https://waiiting23.github.io/BrianPugliese-CoderHouse-Javascript-ConversorMonedas/)
 
 ## Instrucciones
 1. Clonar el repositorio
