@@ -2,17 +2,106 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simulador Conversor de Monedas</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>Simulador de Conversión de Monedas</h1>
+    <header class="header">
+        <div class="container header__content">
+            <div>
+                <h1>Simulador de Conversión de Monedas</h1>
+                <p class="subtitle">Conversión rápida, historial y gestión de tipos de cambio.</p>
+            </div>
+            <div class="badge">Entrega 2 - JS + DOM</div>
+        </div>
+    </header>
 
-    <p>
-        Este simulador permite convertir pesos argentinos a distintas monedas extranjeras
-        y también realizar conversiones inversas. El usuario interactúa mediante cuadros
-        de diálogo donde selecciona la moneda y el monto a convertir. Los resultados se
-        muestran en alertas y en la consola del navegador.
-    </p>
+    <main class="container">
+        <section class="panel">
+            <div class="panel__header">
+                <h2>Conversión</h2>
+                <span id="statusMessage" class="status"></span>
+            </div>
+
+            <div class="grid">
+                <div class="field">
+                    <label for="amountInput">Monto</label>
+                    <input type="number" id="amountInput" min="0" step="0.01" placeholder="Ej: 15000">
+                </div>
+
+                <div class="field">
+                    <label for="fromSelect">De</label>
+                    <select id="fromSelect"></select>
+                </div>
+
+                <div class="field swap">
+                    <button id="swapBtn" class="btn btn--ghost" type="button">Cambiar</button>
+                </div>
+
+                <div class="field">
+                    <label for="toSelect">A</label>
+                    <select id="toSelect"></select>
+                </div>
+
+                <div class="field">
+                    <label for="resultOutput">Resultado</label>
+                    <input type="text" id="resultOutput" readonly placeholder="0.00">
+                </div>
+
+                <div class="field">
+                    <button id="convertBtn" class="btn btn--primary" type="button">Convertir</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="panel">
+            <div class="panel__header">
+                <h2>Tipos de cambio</h2>
+                <button id="resetRatesBtn" class="btn btn--ghost" type="button">Restaurar</button>
+            </div>
+
+            <div class="grid grid--rates">
+                <div class="field">
+                    <label for="rateCode">Código</label>
+                    <input type="text" id="rateCode" placeholder="USD">
+                </div>
+                <div class="field">
+                    <label for="rateName">Nombre</label>
+                    <input type="text" id="rateName" placeholder="Dólar estadounidense">
+                </div>
+                <div class="field">
+                    <label for="rateValue">Valor en ARS</label>
+                    <input type="number" id="rateValue" min="0" step="0.01" placeholder="1000">
+                </div>
+                <div class="field">
+                    <button id="addRateBtn" class="btn btn--secondary" type="button">Guardar tipo</button>
+                </div>
+            </div>
+
+            <div class="table">
+                <div class="table__head">
+                    <span>Código</span>
+                    <span>Moneda</span>
+                    <span>Valor ARS</span>
+                    <span>Acciones</span>
+                </div>
+                <div id="ratesList" class="table__body"></div>
+            </div>
+        </section>
+
+        <section class="panel">
+            <div class="panel__header">
+                <h2>Historial de conversiones</h2>
+                <button id="clearHistoryBtn" class="btn btn--ghost" type="button">Limpiar</button>
+            </div>
+            <div id="historyList" class="history"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">Simulador interactivo con DOM, eventos y almacenamiento local.</div>
+    </footer>
 
     <script src="js/main.js"></script>
 </body>

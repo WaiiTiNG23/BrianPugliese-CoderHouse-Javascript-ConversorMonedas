@@ -1,0 +1,7 @@
+[
+  { "codigo": "ARS", "nombre": "Peso Argentino", "valor": 1 },
+  { "codigo": "USD", "nombre": "Dólar", "valor": 1000 },
+  { "codigo": "EUR", "nombre": "Euro", "valor": 1100 },
+  { "codigo": "BRL", "nombre": "Real", "valor": 200 },
+  { "codigo": "CLP", "nombre": "Peso Chileno", "valor": 1.2 }
+]
